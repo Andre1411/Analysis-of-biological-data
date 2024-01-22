@@ -40,11 +40,16 @@ becomes less than a tolerance value. The $p_{max}$ bound is updated to the calcu
 ### Results and Discussion
 
 The graphs show:
-- **Figure 1:** The value of the sum of squared absolute residuals (ARSS) as the number of bins varies.![h1_arss_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/6e6e6c4f-ce7c-47c7-a326-eb912ba24f89)
-- **Figure 2:** Oversmoothing case: too few bins do not capture the data trend, and two distinct peaks are not recognized. Residuals exhibit clear trends.![h1_oversmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/a1bf313f-ea62-4a91-b67b-fd32c7af580f)
-- **Figure 3:** Undersmoothing case: too many bins, and the smoother follows the noise. Residuals are uncorrelated but with reduced variability.![h1_undersmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/9af15ac1-3c0b-410f-bd1c-5d2fbc7c198d)
-- **Figure 4:** Reasonable smoothing: the smoother follows the noise less (approximately constant at the ends) but can recognize two distinct peaks. Residuals are uncorrelated and have more variable amplitude than the previous case.![h1_oksmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/8808f79a-f4df-4d3d-a685-414cc936ded5)
-- **Figure 5:** Discrepancy: optimal smoothing, even though it slightly follows the noise at the ends.![h1_bestsmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/da280988-8276-4591-964d-74dcbf9752a3)
+- **Figure 1:** The value of the sum of squared absolute residuals (ARSS) as the number of bins varies.<br />
+  ![h1_arss_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/6e6e6c4f-ce7c-47c7-a326-eb912ba24f89)
+- **Figure 2:** Oversmoothing case: too few bins do not capture the data trend, and two distinct peaks are not recognized. Residuals exhibit clear trends.<br />
+  ![h1_oversmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/a1bf313f-ea62-4a91-b67b-fd32c7af580f)
+- **Figure 3:** Undersmoothing case: too many bins, and the smoother follows the noise. Residuals are uncorrelated but with reduced variability.<br />
+  ![h1_undersmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/9af15ac1-3c0b-410f-bd1c-5d2fbc7c198d)
+- **Figure 4:** Reasonable smoothing: the smoother follows the noise less (approximately constant at the ends) but can recognize two distinct peaks. Residuals are uncorrelated and have more variable amplitude than the previous case.<br />
+  ![h1_oksmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/8808f79a-f4df-4d3d-a685-414cc936ded5)
+- **Figure 5:** Discrepancy: optimal smoothing, even though it slightly follows the noise at the ends.<br />
+  ![h1_bestsmoothing_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/da280988-8276-4591-964d-74dcbf9752a3)
 
 The minimum value of the norm of the absolute estimation error is not achieved for the bin number found using the discrepancy criterion. In such cases, the minimum is reached using 182 bins or more, as seen from the graph. In these instances, only one sample falls in each interval, so the smoother value corresponds to the sample value itself, leading to overfitting, undersmoothing, and a zero ARSS.
 
