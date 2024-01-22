@@ -106,13 +106,13 @@ Searches for the minimum and maximum values as points where the first derivative
 
 The graphs, obtained using the consistency criterion 2, show:
 
-- **Figure 1:** First derivative of the regularized LFP, search extremes, zero level, and nullification points within the extremes, corresponding to the maximum and minimum points of the LFP.
+- **Figure 1:** First derivative of the regularized LFP, search extremes, zero level, and nullification points within the extremes, corresponding to the maximum and minimum points of the LFP.<br />
 ![h2_fig_1_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/a0775161-33db-4166-86cc-e8663f87e56d)
-- **Figure 2:** Second derivative of the regularized LFP, search extremes constituted by the maximum and minimum points found with the first derivative, zero level, and nullification point corresponding to the inflection point of the LFP.
+- **Figure 2:** Second derivative of the regularized LFP, search extremes constituted by the maximum and minimum points found with the first derivative, zero level, and nullification point corresponding to the inflection point of the LFP.<br />
 ![h2_fig_2_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/f2af646e-59b7-4c75-94ed-73c03c30f7d1)
-- **Figure 3:** Regularized LFP with respective points of maximum, inflection, and minimum.
+- **Figure 3:** Regularized LFP with respective points of maximum, inflection, and minimum.<br />
 ![h2_fig_3_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/c8cdb805-5fda-40c4-8667-bc91720938d8)
-- **Figure 4:** Comparison between measured and regularized LFP at the top and respective absolute residuals at the bottom.
+- **Figure 4:** Comparison between measured and regularized LFP at the top and respective absolute residuals at the bottom.<br />
 ![h2_fig_4_neg](https://github.com/Andre1411/Analysis-of-biological-data/assets/107708093/897151d3-8916-4967-8863-e88d135ea2e1)
 
 The residuals exhibit trends attributable to the high frequency at which the signal is sampled. This phenomenon is particularly noticeable in the initial part of the signal, where the most abrupt change occurs (negative peak of the first derivative). Despite this, the estimate appears not to follow the noise in the data, and the first and second derivatives allow identifying maximum, minimum, and inflection points, reflecting physiological expectations.
